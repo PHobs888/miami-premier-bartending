@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Event bartending services in Miami: signature cocktails, full-service bartending, weddings, yacht events, private parties, and corporate gatherings.">
+    <title>Event Bartending Services in Miami | Weddings • Parties • Corporate</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Miami Premier Bartending",
+  "image": "https://miamipremierbartending.com/images/casual-bar-standing.jpg",
+  "description": "Professional private event bartending in Miami for weddings, parties, corporate events, and yacht gatherings. Craft cocktails and reliable service.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": "Miami, South Florida",
+  "url": "https://miamipremierbartending.com",
+  "telephone": "",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://instagram.com/YOURHANDLE"
+  ],
+  "servesCuisine": "Cocktails"
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Miami Premier Bartending</div>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="btn">Book Now</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</header>
+
+<!-- MOBILE SLIDE-OUT MENU -->
+<nav id="mobileMenu" class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html" class="btn">Book Now</a>
+</nav>
+
+<!-- SCREEN OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+
+<!-- Background overlay -->
+<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+<!-- Slide-In Mobile Nav -->
+<div id="mobileMenu" class="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="services.html" onclick="toggleMenu()">Services</a>
+    <a href="contact.html" class="btn" onclick="toggleMenu()">Book Now</a>
+</div>
+
+<section class="page-header">
+    <h1>Services</h1>
+    <p>Cocktails, Professionalism, and a Luxury Experience</p>
+</section>
+
+<section class="content-section">
+
+    <h2>Event Types</h2>
+    <ul>
+        <li>Weddings</li>
+        <li>Engagement Parties</li>
+        <li>Yacht & Boat Parties</li>
+        <li>Private Home Events</li>
+        <li>Corporate Events</li>
+        <li>Birthdays & Celebrations</li>
+    </ul>
+
+    <h2>What’s Included</h2>
+    <ul>
+        <li>Professional Bartending Service</li>
+        <li>Mixers, garnishes, and cocktail setup (optional)</li>
+        <li>Custom curated cocktail menus</li>
+        <li>Glassware guidance</li>
+        <li>Shopping list creation</li>
+    </ul>
+
+    <h2>Add-Ons</h2>
+    <ul>
+        <li>Signature Cocktail Creations</li>
+        <li>Full Bar Setup</li>
+        <li>Garnish Station</li>
+        <li>High-end Mixers Package</li>
+        <li>Liquor Pickup (must be prepaid)</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2025 Miami Premier Bartending</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const overlay = document.getElementById("overlay");
+    const hamburger = document.getElementById("hamburger");
+
+    menu.classList.toggle("open");
+    overlay.classList.toggle("show");
+    hamburger.classList.toggle("change");
+}
+</script>
+
+
+
+
+</body>
+</html>

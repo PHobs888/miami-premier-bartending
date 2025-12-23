@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transparent Miami bartender pricing for private events, weddings, and parties. Simple hourly rates, custom cocktail menus, and fast quotes.">
+    <title>Miami Bartender Pricing | Private Event Rates | Miami Premier Bartending</title>
+    <link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Miami Premier Bartending",
+  "image": "https://miamipremierbartending.com/images/casual-bar-standing.jpg",
+  "description": "Professional private event bartending in Miami for weddings, parties, corporate events, and yacht gatherings. Craft cocktails and reliable service.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": "Miami, South Florida",
+  "url": "https://miamipremierbartending.com",
+  "telephone": "",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://instagram.com/YOURHANDLE"
+  ],
+  "servesCuisine": "Cocktails"
+}
+</script>
+
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Miami Premier Bartending</div>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="btn">Book Now</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</header>
+
+<!-- MOBILE SLIDE-OUT MENU -->
+<nav id="mobileMenu" class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html" class="btn">Book Now</a>
+</nav>
+
+<!-- SCREEN OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+
+<!-- Background overlay -->
+<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+<!-- Slide-In Mobile Nav -->
+<div id="mobileMenu" class="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="services.html" onclick="toggleMenu()">Services</a>
+    <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+    <a href="contact.html" class="btn" onclick="toggleMenu()">Book Now</a>
+</div>
+
+<section class="page-header">
+    <h1>Pricing</h1>
+    <p>Transparent packages with all-inclusive options available</p>
+</section>
+
+<section class="pricing-container">
+
+    <div class="price-box">
+        <h3>3-Hour Event</h3>
+        <p class="price">$250</p>
+        <ul>
+            <li>Professional Bartending</li>
+            <li>Basic Mixers & Garnishes</li>
+            <li>Setup & Cleanup</li>
+        </ul>
+    </div>
+
+    <div class="price-box">
+        <h3>4-Hour Event</h3>
+        <p class="price">$325</p>
+        <ul>
+            <li>Professional Bartending</li>
+            <li>Mini Signature Cocktail Menu</li>
+            <li>Shopping List Included</li>
+        </ul>
+    </div>
+
+    <div class="price-box">
+        <h3>5-Hour Event</h3>
+        <p class="price">$400</p>
+        <ul>
+            <li>Professional Bartending</li>
+            <li>Full Signature Cocktail Menu</li>
+            <li>Premium Mixers + Garnishes</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Miami Premier Bartending</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const overlay = document.getElementById("overlay");
+    const hamburger = document.getElementById("hamburger");
+
+    menu.classList.toggle("open");
+    overlay.classList.toggle("show");
+    hamburger.classList.toggle("change");
+}
+</script>
+
+
+
+
+
+</body>
+</html>
