@@ -1,37 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Miami Premier Bartending provides professional bartending services for weddings, corporate events, yacht parties, and private celebrations throughout Miami and South Florida.">
-
-<title>About Miami Premier Bartending | Event Bartending in Miami</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "Miami Premier Bartending",
- "image": "https://miamipremierbartending.com/images/luxury-event-bar.jpg",
- "description": "Professional event bartending service in Miami specializing in weddings, corporate events, private parties, and luxury gatherings.",
- "address": {
-   "@type": "PostalAddress",
-   "addressLocality": "Miami",
-   "addressRegion": "FL",
-   "addressCountry": "US"
- },
- "areaServed": "Miami, South Florida",
- "url": "https://miamipremierbartending.com",
- "priceRange": "$$"
-}
-</script>
-
-=======
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -40,7 +9,6 @@
 
   <link rel="canonical" href="https://miamipremierbartending.com/about.html" />
   <link rel="stylesheet" href="style.css" />
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
@@ -59,231 +27,88 @@
     }
   }
   </script>
->>>>>>> 6b2db86 (Updated quote form layout and linked all buttons to contact form)
 </head>
 
 <body>
+  <header>
+    <div class="logo">Miami Premier Bartending</div>
 
-<header>
-<<<<<<< HEAD
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Packages</a>
+      <a href="index.html#quote" class="btn">Get a Quote</a>
+    </nav>
 
-<div class="logo">Miami Premier Bartending</div>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </header>
 
-<nav class="desktop-nav">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="pricing.html">Pricing</a>
-<a href="contact.html" class="btn">Book Now</a>
-</nav>
+  <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
 
-<div class="hamburger" onclick="toggleMenu()" id="hamburger">
-<div class="bar1"></div>
-<div class="bar2"></div>
-<div class="bar3"></div>
-</div>
-
-</header>
-
-<!-- MOBILE NAV -->
-
-<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
-
-<nav id="mobileMenu" class="mobile-nav">
-<a href="index.html" onclick="toggleMenu()">Home</a>
-<a href="about.html" onclick="toggleMenu()">About</a>
-<a href="services.html" onclick="toggleMenu()">Services</a>
-<a href="pricing.html" onclick="toggleMenu()">Pricing</a>
-<a href="contact.html" class="btn" onclick="toggleMenu()">Book Now</a>
-</nav>
-
-<!-- PAGE HEADER -->
-
-<section class="page-header">
-
-<h1>About Miami Premier Bartending</h1>
-
-<p>
-Professional bartending services for weddings, corporate events,
-private celebrations, and luxury gatherings across Miami and South Florida.
-</p>
-
-</section>
-
-<!-- ABOUT SECTION -->
-
-<section class="content-section">
-
-<img src="images/luxury-event-bar.jpg" alt="Luxury cocktail bar setup at Miami event">
-
-<h2>Professional Event Bartending</h2>
-
-<p>
-Miami Premier Bartending provides polished, professional bartending
-services designed to elevate every event. From elegant weddings to
-corporate gatherings and private celebrations, our team focuses on
-delivering exceptional cocktails and seamless service.
-</p>
-
-<p>
-We believe great bartending goes beyond mixing drinks. It is about
-creating a welcoming atmosphere, maintaining smooth service throughout
-the event, and ensuring guests enjoy a memorable experience.
-</p>
-
-=======
-  <div class="logo">Miami Premier Bartending</div>
-
-  <nav class="desktop-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="pricing.html">Packages</a>
-    <a href="contact.html" class="btn">Get a Quote</a>
+  <nav id="mobileMenu" class="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="services.html" onclick="toggleMenu()">Services</a>
+    <a href="pricing.html" onclick="toggleMenu()">Packages</a>
+    <a href="index.html#quote" class="btn" onclick="toggleMenu()">Get a Quote</a>
   </nav>
 
-  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
-</header>
+  <section class="page-header">
+    <h1>About Miami Premier Bartending</h1>
+    <p>Professional mobile bartending for weddings, corporate events, private parties, and yacht gatherings across South Florida.</p>
+  </section>
 
-<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+  <section class="content-section">
+    <h2>Who We Are</h2>
+    <p>
+      Miami Premier Bartending is a mobile bartending team built for events across Miami, Fort Lauderdale, and South Florida.
+      We focus on polished service, clean bar execution, and a seamless guest experience.
+    </p>
 
-<nav id="mobileMenu" class="mobile-nav">
-  <a href="index.html" onclick="toggleMenu()">Home</a>
-  <a href="about.html" onclick="toggleMenu()">About</a>
-  <a href="services.html" onclick="toggleMenu()">Services</a>
-  <a href="pricing.html" onclick="toggleMenu()">Packages</a>
-  <a href="contact.html" class="btn" onclick="toggleMenu()">Get a Quote</a>
-</nav>
+    <h2>Our Approach</h2>
+    <p>
+      Great bartending is more than drinks — it’s hospitality, timing, and professionalism.
+      We keep service moving, guests taken care of, and the overall experience elevated without being “too formal.”
+    </p>
 
-<!-- Page Header -->
-<section class="page-header">
-  <h1>About Miami Premier Bartending</h1>
-  <p>Professional mobile bartending for weddings, corporate events, private parties, and yacht gatherings across South Florida.</p>
->>>>>>> 6b2db86 (Updated quote form layout and linked all buttons to contact form)
-</section>
+    <h2>What We’re Known For</h2>
+    <ul>
+      <li><strong>Weddings:</strong> cocktail hours, receptions, signature drinks, and smooth pacing all night</li>
+      <li><strong>Corporate events:</strong> professional presentation, efficient service, and brand-appropriate menus</li>
+      <li><strong>Private parties:</strong> high-energy guest service with a clean, premium setup</li>
+      <li><strong>Yacht events:</strong> mobile execution for unique venues and upscale gatherings</li>
+    </ul>
+  </section>
 
-<!-- Main Content -->
-<section class="content-section">
+  <section class="home-final-cta">
+    <h2>Planning an Event?</h2>
+    <p>Share your date, guest count, and location — we’ll respond quickly with a quote.</p>
+    <a href="index.html#quote" class="final-book-btn">Get a Quote</a>
+  </section>
 
-<<<<<<< HEAD
-<img src="images/wedding-bar-setup.jpg" alt="Wedding cocktail bar service in Miami">
+  <footer>
+    <div class="footer-links">
+      <a href="wedding-bartender-miami.html">Wedding Bartender Miami</a>
+      <a href="corporate-event-bartender-miami.html">Corporate Event Bartender Miami</a>
+      <a href="yacht-bartender-miami.html">Yacht Bartender Miami</a>
+    </div>
+    <p>© 2025 Miami Premier Bartending</p>
+  </footer>
 
-<h2>Designed for Weddings, Corporate Events & Private Parties</h2>
-
-<p>
-Our bartending services are tailored for a wide range of events across
-Miami and South Florida. Whether your event is an intimate private
-gathering or a large celebration, we bring the same level of
-professionalism and attention to detail.
-</p>
-
-<ul>
-
-<li>Wedding receptions and cocktail hours</li>
-<li>Corporate events and company parties</li>
-<li>Private home celebrations</li>
-<li>Yacht and waterfront events</li>
-<li>Luxury parties and special occasions</li>
-
-</ul>
-
-</section>
-
-<section class="content-section">
-
-<img src="images/craft-cocktails.jpg" alt="Craft cocktails prepared by professional bartenders">
-
-<h2>A Premium Cocktail Experience</h2>
-
-<p>
-Our focus is on delivering high-quality cocktails, efficient service,
-and a clean professional bar setup. Each event is handled with care to
-ensure the bar runs smoothly from the first drink served to the final
-guest departure.
-</p>
-
-<p>
-The goal is simple: provide a stress-free bartending experience that
-enhances your event and leaves guests impressed.
-</p>
-
-</section>
-
-<footer>
-
-<p>© 2025 Miami Premier Bartending</p>
-
-</footer>
-
-<script>
-
-function toggleMenu() {
-
-const menu = document.getElementById("mobileMenu");
-const overlay = document.getElementById("overlay");
-const hamburger = document.getElementById("hamburger");
-
-menu.classList.toggle("open");
-overlay.classList.toggle("show");
-hamburger.classList.toggle("change");
-
-=======
-  <h2>Who We Are</h2>
-  <p>
-    Miami Premier Bartending is a mobile bartending team focused on delivering polished, reliable service for events throughout
-    Miami, Fort Lauderdale, and South Florida. We specialize in seamless bar execution — from setup and guest flow to signature cocktails
-    and end-of-night breakdown.
-  </p>
-
-  <h2>Our Approach</h2>
-  <p>
-    We believe great bartending is more than drinks — it’s hospitality, timing, and professionalism. Our team brings a calm, organized
-    presence behind the bar, keeping lines moving, guests taken care of, and the overall experience elevated.
-  </p>
-
-  <h2>What We’re Known For</h2>
-  <ul>
-    <li><strong>Weddings:</strong> cocktail hours, receptions, signature drinks, and smooth pacing all night</li>
-    <li><strong>Corporate events:</strong> professional presentation, efficient service, and brand-appropriate menus</li>
-    <li><strong>Private parties:</strong> high-energy guest service with a clean, premium setup</li>
-    <li><strong>Yacht & luxury gatherings:</strong> mobile execution for unique venues and upscale experiences</li>
-  </ul>
-
-</section>
-
-<!-- CTA -->
-<section class="home-final-cta">
-  <h2>Planning an Event?</h2>
-  <p>Tell us your date, guest count, and location — we’ll recommend the best package and staffing.</p>
-  <a href="contact.html" class="final-book-btn">Get a Quote</a>
-</section>
-
-<footer>
-  <div class="footer-links">
-    <a href="wedding-bartender-miami.html">Wedding Bartender Miami</a>
-    <a href="corporate-event-bartender-miami.html">Corporate Event Bartender Miami</a>
-    <a href="yacht-bartender-miami.html">Yacht Bartender Miami</a>
-  </div>
-  <p>© 2025 Miami Premier Bartending</p>
-</footer>
-
-<script>
-function toggleMenu(){
-  const menu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("overlay");
-  const hamburger = document.getElementById("hamburger");
-
-  menu.classList.toggle("open");
-  overlay.classList.toggle("show");
-  hamburger.classList.toggle("change");
->>>>>>> 6b2db86 (Updated quote form layout and linked all buttons to contact form)
-}
-
-</script>
-
+  <script>
+    function toggleMenu(){
+      const menu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("overlay");
+      const hamburger = document.getElementById("hamburger");
+      menu.classList.toggle("open");
+      overlay.classList.toggle("show");
+      hamburger.classList.toggle("change");
+    }
+  </script>
 </body>
 </html>
