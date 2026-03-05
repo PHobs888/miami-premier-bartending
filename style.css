@@ -140,6 +140,31 @@ header{
   font-size: 18px;
   opacity: .95;
 }
+
+/* ================================
+   PAGE HERO (About, Services, etc.)
+================================ */
+
+.page-hero{
+  background: var(--navy);
+  padding: 90px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.page-hero h1{
+  font-family:'Playfair Display', serif;
+  font-size: 44px;
+  margin-bottom: 14px;
+  color:#fff;
+}
+
+.page-hero p{
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: rgba(255,255,255,0.9);
+}
 /* ================================
    TRUST BAR
 ================================ */
@@ -290,7 +315,6 @@ header{
   margin:0 auto;
   padding:56px 20px;
 }
-
 .content-section h2{
   font-family:'Playfair Display', serif;
   font-size:30px;
@@ -315,6 +339,81 @@ header{
   border-radius:12px;
   font-weight:800;
 }
+
+/* Services page spacing + clean grid */
+.services-content h2{
+  margin-top: 56px;
+  margin-bottom: 12px;
+}
+
+.services-content p{
+  margin: 0 0 18px 0;
+  max-width: 750px;
+}
+
+/* Center service section headers */
+.services-content h2{
+  text-align: center;
+}
+
+.services-content p{
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 24px auto;
+}
+
+.services-content h2{
+  text-align:center;
+  margin-top:60px;
+}
+
+.service-grid{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 34px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
+}
+
+.service-grid li{
+  background: var(--muted);
+  border: 1px solid var(--border);
+  padding: 16px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.about-content h2{
+  text-align:center;
+}
+
+.about-content p{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 24px auto;
+}
+
+/* Center headings + intro text on pricing/packages page */
+.pricing-content h2{
+  text-align:center;
+}
+
+.pricing-content > p{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 24px auto;
+}
+
+.pricing-content h2{
+  margin-top:60px;
+}
+
+@media (max-width: 800px){
+  .service-grid{ grid-template-columns: 1fr; }
+}
+
 
 /* ================================
    CONTACT / QUOTE FORM (Homepage + Contact page)
@@ -434,6 +533,18 @@ header{
   font-weight:900;
   text-align:center;
 }
+
+/* Light section band */
+.section-band{
+  background: var(--muted);
+  padding: 70px 0;
+}
+
+<section class="section-band">
+  <div class="content-section">
+    ...
+  </div>
+</section>
 
 /* ================================
    FINAL CTA (optional)
