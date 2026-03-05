@@ -113,6 +113,29 @@ header{
   color:#111 !important;
 }
 
+/* Center CTA section used across pages */
+.home-final-cta{
+  padding:70px 20px;
+  background:var(--muted);
+  text-align:center;
+}
+
+.home-final-cta h2{
+  font-family:'Playfair Display', serif;
+  font-size:36px;
+  margin-bottom:12px;
+}
+
+.home-final-cta p{
+  max-width:720px;
+  margin:0 auto 22px auto;
+  text-align:center;
+}
+
+.home-final-cta .final-book-btn{
+  display:inline-block;
+}
+
 /* ================================
    HERO
 ================================ */
