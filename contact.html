@@ -1,176 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Check availability and book Miami’s top private event bartender. Fast response and simple booking for all event types.">
-    <title>Book an Event Bartender | Miami Premier Bartending</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get a fast quote for a professional bartender in Miami and South Florida. Weddings, corporate events, private parties, and yacht gatherings." />
+  <title>Get a Quote | Miami Premier Bartending</title>
 
-    <link rel="stylesheet" href="style.css">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Miami Premier Bartending",
-  "image": "https://miamipremierbartending.com/images/casual-bar-standing.jpg",
-  "description": "Professional private event bartending in Miami for weddings, parties, corporate events, and yacht gatherings. Craft cocktails and reliable service.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Miami",
-    "addressRegion": "FL",
-    "addressCountry": "US"
-  },
-  "areaServed": "Miami, South Florida",
-  "url": "https://miamipremierbartending.com",
-  "telephone": "",
-  "priceRange": "$$",
-  "sameAs": [
-    "https://instagram.com/YOURHANDLE"
-  ],
-  "servesCuisine": "Cocktails"
-}
-</script>
-
-
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Miami Premier Bartending</div>
+  <div class="logo">Miami Premier Bartending</div>
 
-    <!-- Desktop Nav -->
-    <nav class="desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html" class="btn">Book Now</a>
-    </nav>
-
-    <!-- Hamburger -->
-    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-</header>
-
-<!-- MOBILE SLIDE-OUT MENU -->
-<nav id="mobileMenu" class="mobile-nav">
+  <nav class="desktop-nav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="pricing.html">Pricing</a>
-    <a href="contact.html" class="btn">Book Now</a>
-</nav>
+    <a href="contact.html" class="btn">Get a Quote</a>
+  </nav>
 
-<!-- SCREEN OVERLAY -->
-<div id="overlay" onclick="toggleMenu()"></div>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+</header>
 
-<!-- Background overlay -->
 <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
 
-<!-- Slide-In Mobile Nav -->
-<div id="mobileMenu" class="mobile-nav">
-    <a href="index.html" onclick="toggleMenu()">Home</a>
-    <a href="about.html" onclick="toggleMenu()">About</a>
-    <a href="services.html" onclick="toggleMenu()">Services</a>
-    <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
-    <a href="contact.html" class="btn" onclick="toggleMenu()">Book Now</a>
-</div>
+<nav id="mobileMenu" class="mobile-nav">
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="services.html" onclick="toggleMenu()">Services</a>
+  <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+  <a href="contact.html" class="btn" onclick="toggleMenu()">Get a Quote</a>
+</nav>
 
 <section class="page-header">
-    <h1>Book Your Event</h1>
-    <p>Tell me about your event and I’ll respond quickly.</p>
+  <h1>Book Your Event</h1>
+  <p>Tell me about your event and I’ll respond quickly.</p>
 </section>
 
-<section class="form-section">
-    <form id="contact-form">
+<section class="form-section" id="quote">
+  <div class="form-wrapper">
+    <div class="contact-card">
+      <div class="contact-card__head">
+        <h2>Get a Quote</h2>
+        <p>Share a few details below — I’ll confirm availability and pricing.</p>
+      </div>
 
-        <input type="hidden" id="form-endpoint" value="https://formspree.io/f/xovgjpla">
-        
-        <label>Your Name</label>
-        <input type="text" name="name" required>
+      <form id="contact-form" class="contact-form">
+        <input type="hidden" id="form-endpoint" value="https://formspree.io/f/xovgjpla" />
 
-        <label>Your Email</label>
-        <input type="email" name="email" required>
+        <div class="form-grid">
 
-        <label>Event Date</label>
-       <input type="date" name="eventDate">
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required />
+          </div>
 
-        <label>Event Address</label>
-        <input type="text" name="eventAddress">
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" name="phone" placeholder="(305) 555-1234" required />
+          </div>
 
-        <label>Estimated Guest Count</label>
-        <input type="number" name="guestCount">
+          <div class="field">
+            <label for="email">Your Email</label>
+            <input id="email" type="email" name="email" placeholder="you@email.com" required />
+          </div>
 
-        <label>Do you need full bar setup?</label>
-        <select name="fullSetup">
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
+          <div class="field">
+            <label for="eventDate">Event Date</label>
+            <input id="eventDate" type="date" name="eventDate" required />
+          </div>
 
-        <label>Message / Details</label>
-        <textarea name="message"></textarea>
+          <div class="field">
+            <label for="eventAddress">Event Location / Address</label>
+            <input id="eventAddress" type="text" name="eventAddress" placeholder="City + venue/address" required />
+          </div>
+
+          <div class="field">
+            <label for="guestCount">Estimated Guest Count</label>
+            <input id="guestCount" type="number" name="guestCount" min="1" placeholder="e.g., 75" required />
+          </div>
+
+          <div class="field span-2">
+            <label for="fullSetup">Do you need full bar setup?</label>
+            <select id="fullSetup" name="fullSetup" required>
+              <option value="">Select one</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+
+          <div class="field span-2">
+            <label for="message">Message / Details</label>
+            <textarea id="message" name="message" placeholder="Event type, hours needed, venue details, alcohol provided, etc." required></textarea>
+          </div>
+
+        </div>
 
         <button type="submit" class="submit-btn">Send Request</button>
 
-        <div id="form-success" style="
-    display:none;
-    margin-top:20px;
-    font-size:18px;
-    color:green;
-    text-align:center;
-">
-    Thank you! Your request has been sent. I will reply shortly.
-</div>
+        <div id="form-success" class="form-success">
+          Thank you! Your request has been sent. I’ll reply shortly.
+        </div>
+      </form>
 
-    </form>
+    </div>
+  </div>
 </section>
 
 <footer>
-    <p>© 2025 Miami Premier Bartending</p>
+  <p>© 2025 Miami Premier Bartending</p>
 </footer>
 
 <script>
 function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    const overlay = document.getElementById("overlay");
-    const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("overlay");
+  const hamburger = document.getElementById("hamburger");
 
-    menu.classList.toggle("open");
-    overlay.classList.toggle("show");
-    hamburger.classList.toggle("change");
+  menu.classList.toggle("open");
+  overlay.classList.toggle("show");
+  hamburger.classList.toggle("change");
 }
 </script>
 
-
 <script>
-document.getElementById("contact-form").addEventListener("submit", async function(e) {
-    e.preventDefault(); // stop page refresh
-    
-    const endpoint = document.getElementById("form-endpoint").value;
-    const form = e.target;
-    const formData = new FormData(form);
+document.getElementById("contact-form").addEventListener("submit", async function(e){
+  e.preventDefault();
 
-    const response = await fetch(endpoint, {
-        method: "POST",
-        body: formData,
-        headers: { "Accept": "application/json" }
-    });
+  const endpoint = document.getElementById("form-endpoint").value;
+  const form = e.target;
+  const formData = new FormData(form);
 
-    if (response.ok) {
-        document.getElementById("form-success").style.display = "block";
-        form.reset();
-    } else {
-        alert("There was a problem sending your message. Please try again.");
-    }
+  const response = await fetch(endpoint, {
+    method: "POST",
+    body: formData,
+    headers: { "Accept": "application/json" }
+  });
+
+  if (response.ok) {
+    document.getElementById("form-success").style.display = "block";
+    form.reset();
+  } else {
+    alert("There was an error sending your request.");
+  }
 });
 </script>
-
-
 
 </body>
 </html>
